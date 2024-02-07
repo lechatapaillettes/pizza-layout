@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Food Delivery</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <div class="logo">
+            <i class="fa-solid fa-location-dot location-icon"></i>
+          </div>
+          <div class="logo-txt">
+            <p class="logo-txt-1">Food</p>
+            <p class="logo-txt-2">Delivery</p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <button class="menu-button">
+          <i class="fa-solid fa-chevron-left arrow-icon"></i>
+          <p>Back to Menu</p>
+        </button>
+
+        <img src="images/pizza.png" alt="Pizza" class="main-pizza" />
+
+        <div class="main-container">
+          <h1>Tomato Pomadoro</h1>
+
+          <div class="description-container">
+            <div class="hot-levels">
+              <i class="fa-solid fa-pepper-hot pepper-color"></i
+              ><i class="fa-solid fa-pepper-hot pepper-color"></i
+              ><i class="fa-solid fa-pepper-hot pepper-color"></i
+              ><i class="fa-solid fa-pepper-hot pepper-color"></i
+              ><i class="fa-solid fa-pepper-hot pepper-no-color"></i>
+              <h2 class="main-product-hot-level">Hot as Hell !</h2>
+            </div>
+            <p class="main-product-description">
+              The amazing sauce accentuates the crust, cheese and other toppings
+              as it bakes in with the entire pizza...
+            </p>
+          </div>
+
+          <div class="quantity-price">
+            <div class="quantity-selector">
+              <span class="minus">-</span>
+              <input type="text" value="1" class="quantity" />
+              <span class="plus">+</span>
+            </div>
+            <div class="price-tag">
+              <p>Price: <em>$14</em></p>
+              <span class="circle"></span>
+            </div>
+          </div>
+
+          <button class="add-to-cart"><p>Add to cart</p></button>
+
+          <div class="ingredients-container">
+            <div class="ingredients-column">
+              <div class="ingredients-row">
+                <div class="ingredient-top">
+                  <i class="fa-solid fa-cheese ingredient-icon"></i>
+                  <div class="ingredients">
+                    <p class="quantity">60g</p>
+                    <p class="ingredient">Mozarella</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ingredients-row">
+                <i class="fa-brands fa-envira ingredient-icon"></i>
+                <div class="ingredients">
+                  <p class="quantity">10g</p>
+                  <p class="ingredient">Basil</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ingredients-column">
+              <div class="ingredients-row">
+                <div class="ingredient-top">
+                  <i class="fa-solid fa-bacon ingredient-icon"></i>
+                </div>
+                <div class="ingredients">
+                  <p class="quantity">120g</p>
+                  <p class="ingredient">Bacon</p>
+                </div>
+              </div>
+
+              <div class="ingredients-row">
+                <i class="fa-solid fa-drumstick-bite ingredient-icon"></i>
+                <div class="ingredients">
+                  <p class="quantity">20g</p>
+                  <p class="ingredient">Chicken Fillet</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ingredients-column">
+              <div class="ingredients-row">
+                <div class="ingredient-top">
+                  <i class="fa-solid fa-apple-whole ingredient-icon"></i>
+                </div>
+                <div class="ingredients">
+                  <p class="quantity">200g</p>
+                  <p class="ingredient">Tomato</p>
+                </div>
+              </div>
+
+              <div class="ingredients-row">
+                <i class="fa-solid fa-pizza-slice ingredient-icon"></i>
+                <div class="ingredients">
+                  <p class="quantity">50g</p>
+                  <p class="ingredient">Pizza Base</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,23 +1,334 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  font-weight: normal;
-  src: url('fonts/Proxima\ Nova\ Regular.otf');
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-  font-family: 'Proxima Nova';
-  font-weight: lighter;
-  src: url('fonts/Proxima\ Nova\ Thin.otf');
+body {
+  background: linear-gradient(
+    330deg,
+    rgba(114, 97, 180, 1) 0%,
+    rgba(182, 63, 129, 1) 100%
+  );
+  font-family: "Quicksand";
+  font-weight: 400;
+  color: rgb(49, 50, 75);
 }
 
-@font-face {
-  font-family: 'Proxima Nova';
-  font-weight: bold;
-  src: url('fonts/Proxima\ Nova\ Bold.otf');
+div.container {
+  background-color: white;
+  width: 1280px;
+  height: 100vh;
+  margin: 90px auto 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: rgb(96, 64, 133) 0px 20px 30px;
+  position: relative;
 }
 
-@font-face {
-  font-family: 'Proxima Nova';
-  font-weight: normal;
-  src: url('fonts/Proxima\ Nova\ Extrabold.otf');
+header {
+  width: 100%;
+}
+
+div.logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  padding: 35px 110px;
+}
+
+.location-icon {
+  color: rgba(182, 63, 129, 1);
+  font-size: 50px;
+}
+
+.logo-txt {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.logo-txt-2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 8px;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+    0deg,
+    rgb(242, 243, 247) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(242, 243, 247) 100%
+  );
+
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+button.menu-button {
+  background-color: rgb(49, 50, 75);
+  width: 210px;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  position: absolute;
+  z-index: 10;
+  top: 190px;
+
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-right: 20px;
+  cursor: pointer;
+
+  font-family: "Quicksand";
+  text-align: right;
+  color: white;
+  font-weight: light;
+  font-size: 13px;
+
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: rgb(69, 70, 107);
+}
+
+.arrow-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+div.main-container {
+  margin-left: 100px;
+}
+
+img.main-pizza {
+  width: 400px;
+  border: 50px solid white;
+  border-radius: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateX(110px) translateY(70px);
+}
+
+div.main-container {
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+div.description-container {
+  width: 335px;
+}
+
+div.hot-levels {
+  display: flex;
+  margin-top: 30px;
+}
+
+.pepper-color,
+.pepper-no-color {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.pepper-color {
+  color: rgb(231, 49, 98);
+}
+
+.pepper-no-color {
+  color: rgb(189, 187, 209);
+}
+
+h2.main-product-hot-level {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p.main-product-description {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+div.quantity-price {
+  display: flex;
+  align-items: center;
+}
+
+div.quantity-selector {
+  width: 163px;
+  height: 40px;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+}
+
+span.minus, span.plus {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+span.minus {
+  border-right: 2px solid rgb(244, 245, 248);
+}
+
+span.plus {
+  border-left: 2px solid rgb(244, 245, 248);
+}
+
+input.quantity {
+  width: 70px;
+  height: 40px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Quicksand";
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+div.price-tag {
+  width: 140px;
+  height: 40px;
+  margin-left: 30px;
+  border: 1px solid rgb(235, 234, 241);
+  font-size: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+div.price-tag em {
+  color: rgb(231, 49, 98);
+  font-style: normal;
+  font-weight: 600;
+}
+
+span.circle {
+  height: 6px;
+  width: 6px;
+  border: 1px solid rgb(235, 234, 241);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+button.add-to-cart {
+  background: /*linear-gradient(
+    90deg,
+    rgb(96, 102, 190) 0%, */ rgb(
+      231,
+      49,
+      98
+    )
+    100% /* ) */;
+
+  width: 335px;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  color: white;
+  font-family: "Quicksand";
+  font-weight: 500;
+  color: white;
+  font-weight: light;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  transition: background-color 0.5s ease;
+}
+
+button.add-to-cart:hover {
+  background: /*linear-gradient(
+    -90deg,*/ rgb(96, 102, 190) 0%
+    /*,
+    rgb(231, 49, 98) 100%
+   ) */;
+}
+
+div.ingredients-container {
+  width: 520px;
+  height: 150px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  position: absolute;
+  z-index: 10;
+  top: 525px;
+  right: 110px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.ingredients-column {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+div.ingredients-row {
+  display: flex;
+  flex-direction: row;
+}
+
+div.ingredient-top {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+div.ingredients {
+  margin-left: 20px;
+}
+
+.ingredient-icon {
+  color: rgb(122, 128, 202);
+  font-size: 25px;
+}
+
+p.quantity {
+  color: rgb(189, 187, 209);
+  font-size: 10px;
+}
+
+p.ingredient {
+  font-weight: 600;
+  font-size: 12px;
 }
