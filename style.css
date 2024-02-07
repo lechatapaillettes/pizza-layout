@@ -27,6 +27,7 @@ div.container {
 
 header {
   width: 100%;
+  display: flex;
 }
 
 div.logo-container {
@@ -37,12 +38,12 @@ div.logo-container {
   padding: 35px 110px;
 }
 
-.location-icon {
+i.location-icon-logo {
   color: rgba(182, 63, 129, 1);
   font-size: 50px;
 }
 
-.logo-txt {
+div.logo-txt {
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 5px;
@@ -50,11 +51,74 @@ div.logo-container {
   margin-left: 10px;
 }
 
-.logo-txt-2 {
+p.logo-txt-2 {
   font-style: normal;
   font-weight: 300;
   font-size: 10px;
   letter-spacing: 8px;
+}
+
+div.mid-header {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+div.location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 187, 209);
+}
+
+i.location-icon {
+  font-size: 15px;
+}
+
+p.location-txt, p.address, i.location-icon {
+  margin-right: 10px;
+}
+
+p.location-txt, p.address, i.fa-pen {
+  font-size: 12px;
+}
+
+p.address {
+  color: rgb(49, 50, 75);
+  font-weight: 700;
+}
+
+i.fa-pen {
+  color: rgb(96, 102, 190);
+  cursor: pointer;
+}
+
+div.question-input-container {
+  display: flex;
+  align-items: center;
+}
+
+input.question-input {
+  width: 330px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid rgb(245, 245, 251);
+  border-radius: 15px;
+}
+
+input.question-input:focus {
+  border: 1px solid rgb(96, 102, 190);
+}
+
+::placeholder {
+  color: rgb(203, 202, 220);
+  font-family: "Quicksand";
+  padding-left: 20px;
+}
+
+i.fa-magnifying-glass {
+  color: rgb(189, 187, 209);
+  margin-left: -40px;
+  cursor: pointer;
 }
 
 main {
@@ -99,11 +163,15 @@ button.menu-button {
   transition: background-color 0.3s ease;
 }
 
-.menu-button:hover {
+button.menu-button:hover {
   background-color: rgb(69, 70, 107);
 }
 
-.arrow-icon {
+button.menu-button:active {
+  background-color: rgb(49, 50, 75);
+}
+
+i.arrow-icon {
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -139,17 +207,17 @@ div.hot-levels {
   margin-top: 30px;
 }
 
-.pepper-color,
-.pepper-no-color {
+i.pepper-color,
+i.pepper-no-color {
   font-size: 20px;
   margin-right: 10px;
 }
 
-.pepper-color {
+i.pepper-color {
   color: rgb(231, 49, 98);
 }
 
-.pepper-no-color {
+i.pepper-no-color {
   color: rgb(189, 187, 209);
 }
 
@@ -178,7 +246,8 @@ div.quantity-selector {
   border-radius: 15px;
 }
 
-span.minus, span.plus {
+span.minus,
+span.plus {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -251,7 +320,8 @@ button.add-to-cart {
       49,
       98
     )
-    100% /* ) */;
+    /* 
+    100% ) */;
 
   width: 335px;
   height: 50px;
@@ -274,10 +344,15 @@ button.add-to-cart {
 
 button.add-to-cart:hover {
   background: /*linear-gradient(
-    -90deg,*/ rgb(96, 102, 190) 0%
-    /*,
+    -90deg,*/ rgb(96, 102, 190)
+    /* 0%
+    ,
     rgb(231, 49, 98) 100%
    ) */;
+}
+
+button.add-to-cart:active {
+  background: rgb(231, 49, 98);
 }
 
 div.ingredients-container {
@@ -318,7 +393,7 @@ div.ingredients {
   margin-left: 20px;
 }
 
-.ingredient-icon {
+i.ingredient-icon {
   color: rgb(122, 128, 202);
   font-size: 25px;
 }
