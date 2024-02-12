@@ -56,17 +56,25 @@
             <p class="address">Down Town Brooklyn, str 29, box 14</p>
             <i class="fa-solid fa-pen"></i>
           </div>
-          
+
           <div className="question-input-container">
-            <input type="text" placeholder="What food you want?" class="question-input"/>
+            <input
+              type="text"
+              placeholder="What food you want?"
+              class="question-input"
+            />
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
         </div>
 
         <div class="floating-dishes-container">
-          <img src="images/salad.png" alt="Salad" class="floating-dishes">
-          <img src="images/pokebowl.png" alt="Poke Bowl" class="floating-dishes">
-          <img src="images/pizza.png" alt="Pizza" class="floating-dishes">
+          <img src="images/salad.png" alt="Salad" class="floating-dishes" />
+          <img
+            src="images/pokebowl.png"
+            alt="Poke Bowl"
+            class="floating-dishes"
+          />
+          <img src="images/pizza.png" alt="Pizza" class="floating-dishes" />
         </div>
 
         <div class="cart-container">
@@ -100,7 +108,7 @@
               ><i class="fa-solid fa-pepper-hot pepper-color"></i
               ><i class="fa-solid fa-pepper-hot pepper-color"></i
               ><i class="fa-solid fa-pepper-hot pepper-no-color"></i>
-              <h2 class="main-product-hot-level">Hot as Hell !</h2>
+              <h3 class="main-product-hot-level">Hot as Hell !</h3>
             </div>
             <p class="main-product-description">
               The amazing sauce accentuates the crust, cheese and other toppings
@@ -187,11 +195,85 @@
       </main>
 
       <footer>
+        <div class="back-options">
+          <a href="#" class="find-food">Find Food</a>
+          <i class="fa-solid fa-chevron-right chevron-1"></i>
+          <a href="#" class="restaurant-name">Riviera Restaurant</a>
+          <i class="fa-solid fa-chevron-right chevron-2"></i>
+          <p class="current-dish-name">Tomato Pomadoro</p>
+        </div>
 
-        <a href="#" class="find-food">Find Food</a> <i class="fa-solid fa-chevron-right"></i> <a href="#" class="restaurant-name">Riviera Restaurant</a> <i class="fa-solid fa-chevron-right"></i> <p class="current-dish-name">Tomato Pomadoro</p>
-                  
+        <section class="more-info-and-cards">
+          <div class="more-info-titles">
+            <h2>Tastes good with</h2>
+            <h2>Feedbacks <span class="feedback-number">(10)</span></h2>
+            <h2>Detailed info</h2>
+          </div>
+
+          <div class="cards-container">
+            <div class="card">
+              <img src="images/salad.png" alt="Salad" />
+              <i class="fa-solid fa-circle-info"></i>
+
+              <h4 class="dish-title">Cæsar salad</h4>
+              <p class="dish-description">
+                Lettuce, chicken, parmesan cheese...
+              </p>
+
+              <div class="price-tag">
+                <p>$14</p>
+                <span class="circle"></span>
+              </div>
+
+              <span class="plus-button">+</span>
+            </div>
+            <div class="card">
+              <img src="images/chicken.png" alt="Chicken with rice" />
+              <i class="fa-solid fa-circle-info"></i>
+
+              <h4 class="dish-title">Chicken with rice</h4>
+              <p class="dish-description">Chicken, rice, grean beans...</p>
+
+              <div class="price-tag">
+                <p>$28</p>
+                <span class="circle"></span>
+              </div>
+
+              <span class="plus-button">+</span>
+            </div>
+            <div class="card">
+              <img src="images/pasta.png" alt="Pasta" />
+              <i class="fa-solid fa-circle-info"></i>
+
+              <h4 class="dish-title">Pasta</h4>
+              <p class="dish-description">
+                Basil, mozzarella, marinara sauce...
+              </p>
+
+              <div class="price-tag">
+                <p>$10</p>
+                <span class="circle"></span>
+              </div>
+
+              <span class="plus-button">+</span>
+            </div>
+            <div class="card">
+              <img src="images/seafood.png" alt="Seafood Platter" />
+              <i class="fa-solid fa-circle-info"></i>
+
+              <h4 class="dish-title">Seafood platter</h4>
+              <p class="dish-description">Calamari, crab, fries...</p>
+
+              <div class="price-tag">
+                <p>$21</p>
+                <span class="circle"></span>
+              </div>
+
+              <span class="plus-button"><p>+</p></span>
+            </div>
+          </div>
+        </section>
       </footer>
-
     </div>
 
     <script src="script.js"></script>

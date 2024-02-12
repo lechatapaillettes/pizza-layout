@@ -9,12 +9,11 @@ body {
     rgba(114, 97, 180, 1) 0%,
     rgba(182, 63, 129, 1) 100%
   );
+  background-attachment: fixed;
   font-family: "Quicksand";
   font-weight: 400;
   color: rgb(49, 50, 75);
 }
-
-/* H E A D E R */
 
 div.container {
   background-color: white;
@@ -26,6 +25,8 @@ div.container {
   box-shadow: rgb(96, 64, 133) 0px 20px 30px;
   position: relative;
 }
+
+/* H E A D E R */
 
 header {
   width: 100%;
@@ -198,7 +199,8 @@ div.cart-and-icon {
   align-items: center;
 }
 
-i.fa-cart-shopping, p.cart {
+i.fa-cart-shopping,
+p.cart {
   color: rgb(190, 188, 210);
 }
 
@@ -351,7 +353,7 @@ i.pepper-no-color {
   color: rgb(189, 187, 209);
 }
 
-h2.main-product-hot-level {
+h3.main-product-hot-level {
   font-size: 15px;
   font-weight: 600;
 }
@@ -534,10 +536,16 @@ p.ingredient {
 /* F O O T E R */
 
 footer {
+  height: 500px;
+  padding-top: 30px;
+  background-color: white;
+}
+
+div.back-options {
   font-size: 12px;
-  margin: 30px 110px;
   display: flex;
   align-items: center;
+  padding-left: 110px;
 }
 
 i.fa-chevron-right {
@@ -545,14 +553,158 @@ i.fa-chevron-right {
   font-size: 9px;
 }
 
-p.current-dish-name {
+p.current-dish-name,
+i.chevron-2,
+span.feedback-number {
   color: rgb(190, 188, 210);
 }
 
-a {
+div.back-options a {
   color: rgb(49, 50, 75);
 }
 
-a:hover {
+div.back-options a:hover {
   color: rgb(190, 188, 210);
+}
+
+/* Titles */
+
+section.more-info-and-cards {
+  width: 100%;
+}
+
+div.more-info-titles {
+  display: flex;
+  border-bottom: 1px solid rgb(245, 245, 251);
+  margin: 45px 110px 140px 110px;
+}
+
+div.more-info-titles h2 {
+  font-size: 19px;
+  font-weight: 400;
+  margin-right: 135px;
+}
+
+div.more-info-titles h2:nth-child(1) {
+  max-width: 50vw;
+  padding-bottom: 15px;
+  position: relative;
+}
+div.more-info-titles h2:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  background: rgb(96, 102, 190);
+  height: 5px;
+  border-radius: 10px;
+}
+
+/* Cards */
+
+div.cards-container {
+  width: 100%;
+  height: 125px;
+  background: linear-gradient(
+    0deg,
+    rgb(242, 243, 247) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(242, 243, 247) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+div.card {
+  width: 245px;
+  height: 215px;
+  margin-left: 30px;
+
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+
+  position: relative;
+  top: calc(50% - 107.5px);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card img {
+  width: 100px;
+  border: 20px solid white;
+  border-radius: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  bottom: 145px;
+  left: calc(50% - 72.5px);
+}
+
+div.card i.fa-circle-info {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: rgb(189, 187, 209);
+}
+
+div.card h4.dish-title {
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+div.card p.dish-description {
+  font-size: 12px;
+  color: rgb(190, 188, 210);
+}
+
+div.card div.price-tag {
+  width: 60px;
+  height: 30px;
+  border: 1px solid rgb(235, 234, 241);
+
+  font-size: 15px;
+
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 0 5px;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+div.card div.price-tag span.circle {
+  height: 4px;
+  width: 4px;
+  border: 1px solid rgb(235, 234, 241);
+  border-radius: 50%;
+}
+
+span.plus-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(231, 49, 98);
+  box-shadow: rgba(231, 49, 98, 0.5) 0px 5px 8px 0px;
+  border-radius: 100%;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: -20px;
+
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
