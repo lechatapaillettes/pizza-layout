@@ -46,6 +46,7 @@ div.logo-container {
 i.location-icon-logo {
   color: rgba(182, 63, 129, 1);
   font-size: 50px;
+  cursor: pointer;
 }
 
 div.logo-txt {
@@ -197,6 +198,7 @@ div.cart-details {
 div.cart-and-icon {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 i.fa-cart-shopping,
@@ -583,6 +585,7 @@ div.more-info-titles h2 {
   font-size: 19px;
   font-weight: 400;
   margin-right: 135px;
+  cursor: pointer;
 }
 
 div.more-info-titles h2:nth-child(1) {
@@ -652,6 +655,7 @@ div.card i.fa-circle-info {
   top: 10px;
   font-size: 20px;
   color: rgb(189, 187, 209);
+  cursor: pointer;
 }
 
 div.card h4.dish-title {
