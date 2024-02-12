@@ -707,4 +707,16 @@ span.plus-button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 0.5s ease;
+}
+
+span.plus-button:hover {
+  background: rgb(96, 102, 190);
+  box-shadow: rgba(96, 102, 190, 0.5) 0px 5px 8px 0px;
+}
+
+span.plus-button:active {
+  background: rgb(231, 49, 98);
+  box-shadow: rgba(231, 49, 98, 0.5) 0px 5px 8px 0px;
 }
